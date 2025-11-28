@@ -136,10 +136,89 @@ function Dashboard() {
             assistance.
           </p>
           <p className="demo-notice">
-            ⚠️ <strong>Demo Only:</strong> This is a portfolio project for a future radiation
-            oncology specialist. All data is stored locally in your browser using localStorage.
-            Not for real patient data.
+            ⚠️ <strong>Demo Only:</strong> This is a portfolio project. All data is stored locally 
+            in your browser using localStorage. Not for real patient data.
           </p>
+        </div>
+      </Card>
+
+      <Card title="Contact & Social Media">
+        <div className="contact-section">
+          <div className="contact-info">
+            <h3 className="contact-name">Muhammad Sobri Maulana, S.Kom, CEH, OSCP, OSCE</h3>
+            <p className="contact-email">
+              <span className="contact-icon">📧</span>
+              <a href="mailto:muhammadsobrimaulana31@gmail.com">muhammadsobrimaulana31@gmail.com</a>
+            </p>
+          </div>
+          
+          <div className="links-grid">
+            <div className="links-section">
+              <h4 className="links-heading">Social Media</h4>
+              <div className="social-links">
+                <a href="https://www.youtube.com/@muhammadsobrimaulana6013" target="_blank" rel="noopener noreferrer" className="social-link youtube">
+                  <span className="link-icon">▶️</span>
+                  <span className="link-text">YouTube</span>
+                </a>
+                <a href="https://t.me/winlin_exploit" target="_blank" rel="noopener noreferrer" className="social-link telegram">
+                  <span className="link-icon">✈️</span>
+                  <span className="link-text">Telegram</span>
+                </a>
+                <a href="https://www.tiktok.com/@dr.sobri" target="_blank" rel="noopener noreferrer" className="social-link tiktok">
+                  <span className="link-icon">🎵</span>
+                  <span className="link-text">TikTok</span>
+                </a>
+                <a href="https://chat.whatsapp.com/B8nwRZOBMo64GjTwdXV8Bl" target="_blank" rel="noopener noreferrer" className="social-link whatsapp">
+                  <span className="link-icon">💬</span>
+                  <span className="link-text">WhatsApp Group</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="links-section">
+              <h4 className="links-heading">Support & Donations</h4>
+              <div className="social-links">
+                <a href="https://lynk.id/muhsobrimaulana" target="_blank" rel="noopener noreferrer" className="social-link donation">
+                  <span className="link-icon">💳</span>
+                  <span className="link-text">Lynk.id</span>
+                </a>
+                <a href="https://trakteer.id/g9mkave5gauns962u07t" target="_blank" rel="noopener noreferrer" className="social-link donation">
+                  <span className="link-icon">☕</span>
+                  <span className="link-text">Trakteer</span>
+                </a>
+                <a href="https://karyakarsa.com/muhammadsobrimaulana" target="_blank" rel="noopener noreferrer" className="social-link donation">
+                  <span className="link-icon">💰</span>
+                  <span className="link-text">Karyakarsa</span>
+                </a>
+                <a href="https://nyawer.co/MuhammadSobriMaulana" target="_blank" rel="noopener noreferrer" className="social-link donation">
+                  <span className="link-icon">🎁</span>
+                  <span className="link-text">Nyawer</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="links-section">
+              <h4 className="links-heading">Portfolio & Store</h4>
+              <div className="social-links">
+                <a href="https://muhammadsobrimaulana.netlify.app" target="_blank" rel="noopener noreferrer" className="social-link website">
+                  <span className="link-icon">🌐</span>
+                  <span className="link-text">Main Website</span>
+                </a>
+                <a href="https://muhammad-sobri-maulana-kvr6a.sevalla.page/" target="_blank" rel="noopener noreferrer" className="social-link website">
+                  <span className="link-icon">📄</span>
+                  <span className="link-text">Sevalla Page</span>
+                </a>
+                <a href="https://maulanasobri.gumroad.com/" target="_blank" rel="noopener noreferrer" className="social-link store">
+                  <span className="link-icon">📦</span>
+                  <span className="link-text">Gumroad</span>
+                </a>
+                <a href="https://pegasus-shop.netlify.app" target="_blank" rel="noopener noreferrer" className="social-link store">
+                  <span className="link-icon">🛒</span>
+                  <span className="link-text">Pegasus Shop</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </Card>
     </div>
