@@ -3,6 +3,20 @@ export const STORAGE_KEYS = {
   MDT_CASES: 'mdtCases',
   TOXICITY_REPORTS: 'toxicityReports',
   DR_SOBRI_WORKFLOW: 'drSobriWorkflow',
+  STAGING_CASES: 'stagingCases',
+  IMAGING_LOGS: 'imagingLogs',
+  TARGET_VOLUME_NOTES: 'targetVolumeNotes',
+  OAR_CONSTRAINTS: 'oarConstraints',
+  DOSE_TEMPLATES: 'doseTemplates',
+  TECHNIQUE_CHOICES: 'techniqueChoices',
+  SETUP_PLANS: 'setupPlans',
+  MOTION_STRATEGIES: 'motionStrategies',
+  SYSTEMIC_THERAPY: 'systemicTherapy',
+  PALLIATIVE_PLANS: 'palliativePlans',
+  REIRRADIATION_CASES: 'reirradiationCases',
+  TREATMENT_SCHEDULES: 'treatmentSchedules',
+  RESPONSE_ASSESSMENTS: 'responseAssessments',
+  SUPPORTIVE_CARE_NOTES: 'supportiveCareNotes',
 }
 
 export const getFromStorage = (key) => {
@@ -47,5 +61,47 @@ export const initializeStorage = () => {
   }
   if (!getFromStorage(STORAGE_KEYS.DR_SOBRI_WORKFLOW)) {
     saveToStorage(STORAGE_KEYS.DR_SOBRI_WORKFLOW, {})
+  }
+  if (!getFromStorage(STORAGE_KEYS.STAGING_CASES)) {
+    saveToStorage(STORAGE_KEYS.STAGING_CASES, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.IMAGING_LOGS)) {
+    saveToStorage(STORAGE_KEYS.IMAGING_LOGS, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.TARGET_VOLUME_NOTES)) {
+    saveToStorage(STORAGE_KEYS.TARGET_VOLUME_NOTES, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.OAR_CONSTRAINTS)) {
+    saveToStorage(STORAGE_KEYS.OAR_CONSTRAINTS, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.DOSE_TEMPLATES)) {
+    saveToStorage(STORAGE_KEYS.DOSE_TEMPLATES, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.TECHNIQUE_CHOICES)) {
+    saveToStorage(STORAGE_KEYS.TECHNIQUE_CHOICES, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.SETUP_PLANS)) {
+    saveToStorage(STORAGE_KEYS.SETUP_PLANS, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.MOTION_STRATEGIES)) {
+    saveToStorage(STORAGE_KEYS.MOTION_STRATEGIES, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.SYSTEMIC_THERAPY)) {
+    saveToStorage(STORAGE_KEYS.SYSTEMIC_THERAPY, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.PALLIATIVE_PLANS)) {
+    saveToStorage(STORAGE_KEYS.PALLIATIVE_PLANS, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.REIRRADIATION_CASES)) {
+    saveToStorage(STORAGE_KEYS.REIRRADIATION_CASES, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.TREATMENT_SCHEDULES)) {
+    saveToStorage(STORAGE_KEYS.TREATMENT_SCHEDULES, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.RESPONSE_ASSESSMENTS)) {
+    saveToStorage(STORAGE_KEYS.RESPONSE_ASSESSMENTS, [])
+  }
+  if (!getFromStorage(STORAGE_KEYS.SUPPORTIVE_CARE_NOTES)) {
+    saveToStorage(STORAGE_KEYS.SUPPORTIVE_CARE_NOTES, [])
   }
 }

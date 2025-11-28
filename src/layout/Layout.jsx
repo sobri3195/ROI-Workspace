@@ -37,6 +37,36 @@ function Layout({ children }) {
         return 'OncoSim - BED/EQD2 Calculator'
       case '/dr-sobri-workflow':
         return 'Dr. Sobri Workflow'
+      case '/staging-assistant':
+        return 'Staging Assistant (TNM Helper)'
+      case '/imaging-diagnostic':
+        return 'Imaging & Diagnostic Overview'
+      case '/target-volume-tutor':
+        return 'Target Volume Definition Tutor'
+      case '/oar-constraints':
+        return 'OAR Constraints Library'
+      case '/dose-prescription':
+        return 'Dose Prescription Templates'
+      case '/technique-selection':
+        return 'Technique Selection Assistant'
+      case '/immobilization-setup':
+        return 'Immobilization & Setup Planner'
+      case '/motion-management':
+        return 'Motion Management Planner'
+      case '/systemic-therapy':
+        return 'Concurrent Systemic Therapy Helper'
+      case '/palliative-planner':
+        return 'Palliative Radiotherapy Planner'
+      case '/reirradiation':
+        return 'Re-Irradiation Risk Estimator'
+      case '/treatment-schedule':
+        return 'Treatment Schedule Generator'
+      case '/response-assessment':
+        return 'Response Assessment & Follow-Up Tracker'
+      case '/toxicity-mitigation':
+        return 'Toxicity Mitigation / Supportive Care Library'
+      case '/treatment-pathways':
+        return 'Site-Specific Treatment Pathways Dashboard'
       default:
         return 'ROI-Workspace'
     }
