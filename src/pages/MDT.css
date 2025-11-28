@@ -1,0 +1,103 @@
+.mdt-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mdt-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.mdt-form-card {
+  position: sticky;
+  top: 24px;
+}
+
+.mdt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mdt-cases {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mdt-case-card {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+
+.mdt-case-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.1);
+}
+
+.mdt-case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.mdt-case-patient {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 4px;
+}
+
+.mdt-case-date {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.mdt-case-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mdt-case-field {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.mdt-case-field strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mdt-case-text {
+  margin-top: 4px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.mdt-consensus {
+  background-color: rgba(6, 182, 212, 0.05);
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 3px solid var(--accent-primary);
+}
+
+@media (max-width: 1024px) {
+  .mdt-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mdt-form-card {
+    position: relative;
+    top: 0;
+  }
+}

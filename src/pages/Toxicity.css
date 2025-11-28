@@ -1,0 +1,115 @@
+.toxicity-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.toxicity-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.toxicity-form-card {
+  position: sticky;
+  top: 24px;
+}
+
+.toxicity-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.severity-legend {
+  margin-top: 8px;
+}
+
+.severity-legend h4 {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.legend-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 70px;
+  text-align: center;
+}
+
+.legend-badge.grade-1 {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.legend-badge.grade-2 {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: var(--warning);
+}
+
+.legend-badge.grade-3 {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: var(--danger);
+}
+
+.toxicity-table-wrapper {
+  overflow-x: auto;
+}
+
+.toxicity-table {
+  font-size: 14px;
+}
+
+.toxicity-table .toxicity-alert {
+  background-color: rgba(245, 158, 11, 0.05);
+  border-left: 3px solid var(--warning);
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.grade-badge.grade-1 {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.grade-badge.grade-2 {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: var(--warning);
+}
+
+.grade-badge.grade-3 {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: var(--danger);
+}
+
+@media (max-width: 1024px) {
+  .toxicity-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .toxicity-form-card {
+    position: relative;
+    top: 0;
+  }
+}
