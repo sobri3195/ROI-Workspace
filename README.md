@@ -195,7 +195,33 @@ MIT License - This is a demonstration/portfolio project.
 
 ## 👨‍⚕️ About
 
-Created as a portfolio application for a future radiation oncology specialist, showcasing the integration of modern web technologies with clinical radiotherapy concepts and AI-assisted workflows.
+Created by **Muhammad Sobri Maulana, S.Kom, CEH, OSCP, OSCE**
+
+This portfolio application showcases the integration of modern web technologies with clinical radiotherapy concepts and AI-assisted workflows.
+
+### 📧 Contact
+
+Email: muhammadsobrimaulana31@gmail.com
+
+### 🔗 Links
+
+**Social Media:**
+- YouTube: https://www.youtube.com/@muhammadsobrimaulana6013
+- Telegram: https://t.me/winlin_exploit
+- TikTok: https://www.tiktok.com/@dr.sobri
+- WhatsApp Group: https://chat.whatsapp.com/B8nwRZOBMo64GjTwdXV8Bl
+
+**Support & Donations:**
+- Lynk.id: https://lynk.id/muhsobrimaulana
+- Trakteer: https://trakteer.id/g9mkave5gauns962u07t
+- Karyakarsa: https://karyakarsa.com/muhammadsobrimaulana
+- Nyawer: https://nyawer.co/MuhammadSobriMaulana
+
+**Portfolio & Store:**
+- Main Website: https://muhammadsobrimaulana.netlify.app
+- Sevalla Page: https://muhammad-sobri-maulana-kvr6a.sevalla.page/
+- Gumroad: https://maulanasobri.gumroad.com/
+- Pegasus Shop: https://pegasus-shop.netlify.app
 
 ---
 

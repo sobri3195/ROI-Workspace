@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import Topbar from './Topbar'
@@ -7,10 +7,19 @@ import './Layout.css'
 
 function Layout({ children }) {
   const location = useLocation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     initializeStorage()
   }, [])
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false)
+  }, [location.pathname])
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   const getPageTitle = () => {
     const path = location.pathname
@@ -35,9 +44,13 @@ function Layout({ children }) {
 
   return (
     <div className="layout">
-      <Sidebar />
+      <Sidebar isOpen={isMobileMenuOpen} />
+      <div
+        className={`mobile-menu-overlay ${isMobileMenuOpen ? 'open' : ''}`}
+        onClick={toggleMobileMenu}
+      />
       <div className="layout-main">
-        <Topbar title={getPageTitle()} />
+        <Topbar title={getPageTitle()} onMenuToggle={toggleMobileMenu} />
         <div className="layout-content">
           {children}
         </div>

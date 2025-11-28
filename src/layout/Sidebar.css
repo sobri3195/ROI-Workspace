@@ -78,11 +78,46 @@
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 12px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  word-break: break-word;
+}
+
+.sidebar-footer-credentials {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  font-weight: 500;
 }
 
 .sidebar-footer-text {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.sidebar-email {
+  color: var(--accent-primary);
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.2s;
+}
+
+.sidebar-email:hover {
+  color: var(--accent-secondary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -280px;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
 }
