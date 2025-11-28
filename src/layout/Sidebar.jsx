@@ -12,6 +12,21 @@ function Sidebar({ isOpen }) {
     { path: '/toxicity', label: 'Toxicity Tracker (PROs)', icon: '📋' },
     { path: '/oncosim', label: 'OncoSim (BED/EQD2)', icon: '🧮' },
     { path: '/dr-sobri-workflow', label: 'Dr. Sobri Workflow', icon: '⚕️' },
+    { path: '/staging-assistant', label: 'Staging Assistant (TNM)', icon: '🎯' },
+    { path: '/imaging-diagnostic', label: 'Imaging & Diagnostics', icon: '📷' },
+    { path: '/target-volume-tutor', label: 'Target Volume Tutor', icon: '🎓' },
+    { path: '/oar-constraints', label: 'OAR Constraints Library', icon: '⚠️' },
+    { path: '/dose-prescription', label: 'Dose Prescription', icon: '💊' },
+    { path: '/technique-selection', label: 'Technique Selection', icon: '⚡' },
+    { path: '/immobilization-setup', label: 'Immobilization & Setup', icon: '🛏️' },
+    { path: '/motion-management', label: 'Motion Management', icon: '🌬️' },
+    { path: '/systemic-therapy', label: 'Systemic Therapy Helper', icon: '💉' },
+    { path: '/palliative-planner', label: 'Palliative RT Planner', icon: '🕊️' },
+    { path: '/reirradiation', label: 'Re-Irradiation Risk', icon: '♻️' },
+    { path: '/treatment-schedule', label: 'Treatment Schedule', icon: '📅' },
+    { path: '/response-assessment', label: 'Response Assessment', icon: '📈' },
+    { path: '/toxicity-mitigation', label: 'Toxicity Mitigation', icon: '💚' },
+    { path: '/treatment-pathways', label: 'Treatment Pathways', icon: '🗺️' },
   ]
 
   return (

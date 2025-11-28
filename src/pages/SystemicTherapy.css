@@ -1,0 +1,176 @@
+.systemic-therapy-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.regimens-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.regimens-table {
+  font-size: 14px;
+}
+
+.regimen-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.regimen-site {
+  color: var(--text-secondary);
+}
+
+.therapy-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.therapy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  padding: 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.radio-label input[type="radio"] {
+  cursor: pointer;
+}
+
+.therapy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.therapy-item {
+  padding: 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.therapy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.therapy-header h4 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  transition: transform 0.2s;
+}
+
+.btn-delete:hover {
+  transform: scale(1.2);
+}
+
+.therapy-status {
+  margin-bottom: 10px;
+}
+
+.status-indicator {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-yes {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.status-no {
+  background: rgba(148, 163, 184, 0.2);
+  color: var(--text-muted);
+}
+
+.therapy-regimen {
+  margin: 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.therapy-agent {
+  margin: 4px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.therapy-notes {
+  margin: 8px 0;
+  padding: 10px;
+  background: var(--bg-primary);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.therapy-date {
+  margin: 8px 0 0 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.info-section {
+  line-height: 1.6;
+}
+
+.info-section ul {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.info-section li {
+  margin: 8px 0;
+}
+
+.demo-notice {
+  margin-top: 16px;
+  padding: 12px;
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid var(--warning);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .therapy-layout {
+    grid-template-columns: 1fr;
+  }
+}

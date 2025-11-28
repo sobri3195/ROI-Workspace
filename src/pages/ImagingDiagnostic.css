@@ -1,0 +1,168 @@
+.imaging-diagnostic-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.imaging-layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.imaging-form-card {
+  position: sticky;
+  top: 24px;
+}
+
+.imaging-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.patient-timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 24px;
+}
+
+.patient-id-header {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: var(--accent-primary);
+}
+
+.timeline-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -29px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  border: 2px solid var(--bg-primary);
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.modality-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(6, 182, 212, 0.2);
+  color: var(--accent-primary);
+}
+
+.modality-badge.modality-ct {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.modality-badge.modality-mri {
+  background: rgba(139, 92, 246, 0.2);
+  color: #8b5cf6;
+}
+
+.modality-badge.modality-petct,
+.modality-badge.modality-petmri {
+  background: rgba(236, 72, 153, 0.2);
+  color: #ec4899;
+}
+
+.timeline-date {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.btn-delete-small {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  transition: transform 0.2s;
+}
+
+.btn-delete-small:hover {
+  transform: scale(1.2);
+}
+
+.timeline-impression {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.timeline-findings {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.info-section {
+  line-height: 1.6;
+}
+
+.info-section ul {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.info-section li {
+  margin: 8px 0;
+}
+
+.demo-notice {
+  margin-top: 16px;
+  padding: 12px;
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid var(--warning);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .imaging-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .imaging-form-card {
+    position: relative;
+    top: 0;
+  }
+}

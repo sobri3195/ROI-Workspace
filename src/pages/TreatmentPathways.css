@@ -1,0 +1,155 @@
+.treatment-pathways-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pathways-intro {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.pathway-button {
+  padding: 20px;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pathway-button:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.pathway-button.active {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: var(--accent-primary);
+}
+
+.pathway-icon {
+  font-size: 32px;
+}
+
+.pathway-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.pathway-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.step-content {
+  width: 100%;
+  padding: 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.step-stage {
+  margin: 0 0 8px 0;
+  font-size: 17px;
+  color: var(--accent-primary);
+}
+
+.step-details {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.step-arrow {
+  font-size: 24px;
+  color: var(--accent-primary);
+  margin-bottom: 12px;
+}
+
+.key-points {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.key-points li {
+  margin: 12px 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.info-section {
+  line-height: 1.6;
+}
+
+.info-section ul {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.info-section li {
+  margin: 8px 0;
+}
+
+.demo-notice {
+  margin-top: 16px;
+  padding: 12px;
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid var(--warning);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .pathways-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pathway-button {
+    padding: 16px;
+  }
+
+  .pathway-icon {
+    font-size: 24px;
+  }
+
+  .pathway-name {
+    font-size: 14px;
+  }
+}
